@@ -117,7 +117,8 @@ void ezBuzzer::loop(void) {
 
 					// to distinguish the notes, set a minimum time between them.
 					// the note's duration + 30% seems to work well:
-					_notePauseTime = duration * 1.30;
+					// _notePauseTime = duration * 1.30;
+					_notePauseTime = 0;
 					_startTime = millis();
 				}
 
